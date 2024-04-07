@@ -1,0 +1,146 @@
+@media (min-width: 912px) {
+
+.accordion {
+    display: none;
+
+}
+}
+
+
+  @media (max-width: 912px) {
+
+.mobile-servicos-container {
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+}
+
+.mobile-servicos-block {
+    width: 95%;
+    background-color: #20B5B7;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    margin-right: 0px;
+    border-radius: 20px;
+    height: 80px;
+
+}
+
+.mobile-servicos-block.active .mobile-servicos-content {
+    max-height: 1000px; /* A sufficiently large value to accommodate content */
+}
+
+.mobile-servicos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+        height: 78px;
+}
+
+.mobile-servicos-header h2 {
+    margin: 0;
+    align-content: center;
+margin-left: 5%;
+font-size: 20px;
+
+}
+
+.mobile-servicos-icon {
+    width: 24px;
+    height: 24px;
+        margin-right: 30px;
+}
+
+.mobile-servicos-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.checkuptitle {
+
+    color: #0b4b4d;
+    font-size: 33px;
+    font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 40px;
+      margin-top: 41px;
+      margin-left: 8vw;
+      text-align: left;
+  
+}
+
+.containermobile-servicos-container{
+  width: 100%;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0 5vh;
+}
+
+
+
+.accordion {
+    width: 100%; /* Adjust the width as needed */
+
+}
+
+.accordion-block {
+
+
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #20B5B7;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    cursor: pointer;
+    margin: 20px;
+      border-radius: 20px;
+}
+
+.accordion-title {
+    flex-grow: 1;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.accordion_text_content {
+
+  margin-top: 30px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.accordion-arrow {
+  display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-content {
+    display: none;
+    padding: 24px;
+      /* margin: 20px; */
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 15px;
+      background-color: #76dbdc;
+      border-radius: 20px;
+}
+
+.accordion-icon {
+    display: block;
+    margin: 0 auto;
+}
+}

@@ -1,0 +1,110 @@
+.overlay-container_mapanit {
+  position: relative;
+  top: -160px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Overlay with a higher z-index */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block_mapanit {
+  text-align: center;
+    padding: 38px;
+    width: 26%;
+    height: 340px;
+    background-color: #59BDB2;
+    /* border: 1px solid #ccc; */
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.svg-placeholder_mapanit1 {
+  /* Define the size of your SVG placeholder */
+  width: 37px;
+    height: 22%;
+  /*  padding-top: 18px; */
+    margin: 0 auto; /* Center the SVG placeholder */
+  /* Add your SVG styles here */
+}
+
+.svg-placeholder_mapanit2 {
+  /* Define the size of your SVG placeholder */
+  width: 52px;
+    height: 22%;
+  /*  padding-top: 18px; */
+    margin: 0 auto; /* Center the SVG placeholder */
+  /* Add your SVG styles here */
+}
+
+.svg-placeholder_mapanit3 {
+  /* Define the size of your SVG placeholder */
+  width: 52px;
+    height: 22%;
+  /*  padding-top: 18px; */
+    margin: 0 auto; /* Center the SVG placeholder */
+  /* Add your SVG styles here */
+}
+
+.title_mapanit {
+  font-weight: bold;
+  margin-top: 18px;
+  color: #000000;
+  font-size: 1.3vw;
+}
+
+.subtitle_mapanit {
+  color: #777;
+  margin-top: 20px;
+  margin-left:2%;
+  margin-right: 2%;
+  color: #000000;
+  font-size: 1vw;
+}
+
+
+/* Define a media query for max-width 912px */
+@media (max-width: 912px) {
+  /* Hide the text within each block */
+  .title_mapanit,
+  .subtitle_mapanit {
+    display: none;
+  }
+
+  .overlay-container_mapanit {
+
+        top: -370px;
+  }
+
+  
+
+  /* Style the container for the icons (svgs) */
+  .block_mapanit {
+    text-align: center;
+      padding: 20px;
+      height: 110px;
+      margin-top: 100px;
+  }
+
+  /* Style the SVG placeholders (you may need to adjust the dimensions) */
+  .svg-placeholder_mapanit1,
+  .svg-placeholder_mapanit2,
+  .svg-placeholder_mapanit3 {
+  /*  width: 80px; /* Set the width of the square */
+  /*  height: 80px; /* Set the height of the square */
+    margin: 10px auto; /* Center the square horizontally */
+    align-items: center;
+  }
+
+  #pin {
+
+    max-width: 57px;
+    align-content: center;
+    align-items: center;
+    display: -webkit-inline-box;
+
+
+  }
+}

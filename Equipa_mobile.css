@@ -1,0 +1,40 @@
+@media (max-width: 912px) {
+
+.Equipa_geral  {
+
+display:none !important;
+
+
+
+
+}
+
+
+.team-container {
+           display: flex;
+           overflow: hidden;
+       }
+
+       .team-slide {
+           flex: 0 0 100%;
+           display: none;
+       }
+
+       .team-slide.active {
+           display: block;
+       }
+
+       .team-slide img {
+           max-width: 100%;
+           height: auto;
+       }
+
+       .prev-btn,
+       .next-btn {
+           cursor: pointer;
+       }
+
+
+
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Modals</title>
+    <style>
+        /* Add your CSS styles here */
+        /* ... (your existing CSS) ... */
+    </style>
+</head>
+<body>
+    <section id="section7">
+        <div class="NotíciasTitle">Notícias</div>
+        <div class="container_blocks">
+            <div class="container-news">
+                <!-- First News Block -->
+                <div class="news-block" style="background-image: url('https://nitextile.pt/wp-content/uploads/2023/08/NOTICIA_2.png?_t=1694381223');">
+                    <div class="news-block-content">
+                        <p class="news-title">NITextile estatuto de Spin-off da Universidade do Minho.</p>
+                        <p class="news-description">Ver Notícia</p>
+                    </div>
+                </div>
+                <!-- Second News Block -->
+                <div class="news-block" style="background-image: url('https://nitextile.pt/wp-content/uploads/2023/08/NOTICIA_5.png?_t=1694381223');">
+                    <div class="news-block-content">
+                        <p class="news-title">Network do projeto i5.0 calçado</p>
+                        <p class="news-description">Ver Notícia</p>
+                    </div>
+                </div>
+                <!-- Third News Block -->
+                <div class="news-block" style="background-image: url('https://nitextile.pt/wp-content/uploads/2023/09/Frame-82.png');">
+                    <div class="news-block-content">
+                        <p class="news-title">Noticia 3 - Título de Introdução</p>
+                        <p class="news-description">Ver Notícia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for First News Block -->
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="https://nitextile.pt/wp-content/uploads/2023/08/NOTICIA_2.png?_t=1694381223" alt="Image" id="modal-image1">
+                <div class="modal-text">
+                    <p class="modal-title">NITextile estatuto de Spin-off da Universidade do Minho.</p>
+                    <p class="modal-description">
+                        A Universidade do Minho foi a primeira Universidade em Portugal a formalizar o reconhecimento do carácter inovador do perfil dos empreendedores e impacto económico e social esperado das empresas criadas através da atribuição formal do "estatuto de Spin-off". Estas empresas usufruem de uma relação estreita com a Universidade a nível de reconhecimento, mentoria, acesso a infra-estruturas, acesso a tecnologias/know-how de forma exclusiva, apoio no desenvolvimento do plano de negócio, gestão da propriedade industrial e no acesso a investimento.
+                        A NITextile recebeu o estatuto de Spin-off da Universidade do Minho, valorizando por essa via o conhecimento resultante das suas atividades de investigação científica e tecnológica dos seus fundadores Juliana Cruz e do Pedro Gomes. Este reconhecimento representa a transferência de conhecimentos gerados no seio da Universidade do Minho, através do exercício de uma atividade económica com elevado potencial de crescimento na NITextile. <br> <br>
+                        <a href="https://www.tecminho.uminho.pt/empreender/spin-offs/lista-de-spin-offs">Leia mais</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Second News Block -->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="https://nitextile.pt/wp-content/uploads/2023/08/NOTICIA_5.png?_t=1694381223" alt="Image" id="modal-image2">
+                <div class="modal-text">
+                    <p class="modal-title">Network do projeto i5.0 calçado</p>
+                    <p class="modal-description">
+                        A NITextile teve o participou ativamente no evento de network associado ao projeto i5.0, uma iniciativa catalisada pelo CTCP - Centro Tecnológico do Calçado de Portugal, como parte do projeto SHOE 5.0, um projeto europeu que visa preparar a indústria do calçado na Europa para a desafiante transição rumo a uma indústria sustentável, centrada nas pessoas e caracterizada pela resiliência empresarial.
+                        O evento de network foi concebido para promover discussões de alto nível sobre tópicos de grande pertinência nos dias de hoje, incluindo:
+                        Abordagens centradas nas pessoas: O foco foi colocado na promoção do talento, na promoção da diversidade e na capacitação dos trabalhadores, elementos cruciais para o sucesso de qualquer empreendimento.
+                        Resiliência empresarial: Foram explorados o desenvolvimento e a implementação de novas tecnologias e ferramentas digitais, tornando as empresas a serem ágeis e resilientes em face de um ambiente empresarial em constante evolução.
+                        Sustentabilidade: Destacou-se a transferência de conhecimento para os colaboradores, capacitando-os a liderar ações significativas em prol da sustentabilidade e do respeito pelos ecossistemas. <br> <br>
+                        <a href="https://shoe50.eu/">Leia mais</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Third News Block -->
+        <div id="myModal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="https://nitextile.pt/wp-content/uploads/2023/09/Frame-82.png" alt="Image" id="modal-image3">
+                <div class="modal-text">
+                    <p class="modal-title">Noticia 3 - Título de Introdução</p>
+                    <p class="modal-description">
+                        This is the full content for the third news block. You can add as much text as needed here to provide detailed information about this news article.
+                        You can also include links or other content as required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Get the modal elements for each news block
+        var modal1 = document.getElementById('myModal1');
+        var modal2 = document.getElementById('myModal2');
+        var modal3 = document.getElementById('myModal3');
+
+        // Get the news block elements
+        var newsBlock1 = document.querySelector('.news-block:nth-child(1)');
+        var newsBlock2 = document.querySelector('.news-block:nth-child(2)');
+        var newsBlock3 = document.querySelector('.news-block:nth-child(3)');
+
+        // Event listener for the first news block
+        newsBlock1.addEventListener('click', function() {
+            // Show the modal1
+            modal1.style.display = 'block';
+        });
+
+        // Event listener for the second news block
+        newsBlock2.addEventListener('click', function() {
+            // Show the modal2
+            modal2.style.display = 'block';
+        });
+
+        // Event listener for the third news block
+        newsBlock3.addEventListener('click', function() {
+            // Show the modal3
+            modal3.style.display = 'block';
+        });
+
+        // Close modal functionality (similar for all modals)
+        var closeBtns = document.querySelectorAll('.close');
+        for (var i = 0; i < closeBtns.length; i++) {
+            closeBtns[i].addEventListener('click', function() {
+                this.parentElement.parentElement.style.display = 'none';
+            });
+        }
+
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

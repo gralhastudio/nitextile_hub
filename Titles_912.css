@@ -1,0 +1,78 @@
+@media (max-width: 912px) {
+
+.containerQuemSomos{
+
+
+margin: 10px auto;
+max-width: 100% !important;
+padding-left: 10px !important;
+padding-right: 10px !important;
+flex-direction: column;
+    background-size: 72vw;
+}
+
+.contentQuemSomos {
+
+margin: 5px;
+padding:5px;
+  max-width: 100% !important;
+}
+
+.text {
+
+
+
+}
+
+  .Reconhecimentostitle {
+    color: #202020;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 40px;
+margin-top: 22%;
+margin-left: 0px !important;
+text-align: center;
+  }
+
+.checkuptitle {
+color: #202020;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 40px;
+margin-top: 0px;
+margin-left: 0px ;
+text-align: center;
+
+}
+
+.containerQuemSomos {
+
+
+  margin-right: 4%;
+}
+
+.ContainerServicos {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17%;
+    padding-top: 110px;
+
+
+
+}
+
+
+
+
+
+
+
+
+}

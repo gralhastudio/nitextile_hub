@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        /* Your existing styles here */
+
+        /* Media query for mobile */
+        @media (max-width: 1200px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #f5f5f5;
+                position: absolute;
+                top: 122px;
+                left: 0;
+                width: 100%;
+                z-index: 99;
+
+                padding: 26% 26% 20%;
+    background-color: #59BCB1;
+    line-height: 52px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 0;
+                padding: 10px 20px;
+            }
+
+            .nav-links a {
+                color: #333;
+                transition: color 0.3s;
+            }
+
+            .nav-links a:hover {
+                color: #007bff;
+            }
+
+            .nav-toggle {
+                display: block;
+                cursor: pointer; /* Add cursor pointer for better usability */
+            }
+
+            .nav-toggle.active {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelector('.nav-links');
+            const navToggle = document.querySelector('.nav-toggle');
+
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="sticky-nav">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#section1">Title 1</a></li>
+            <li><a href="#section2">Title 2</a></li>
+            <li><a href="#section3">Title 3</a></li>
+            <li><a href="#section4">Title 4</a></li>
+            <li><a href="#section5">Title 5</a></li>
+            <li><a href="#section6">Title 6</a></li>
+            <li><a href="#section7">Title 7</a></li>
+        </ul>
+        <div class="nav-toggle">&#9776;</div>
+    </nav>
+
+    <!-- Your sections here -->
+</body>
+</html>

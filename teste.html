@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <style>
+        /* Modal container */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+        }
+
+        /* Modal content */
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        /* Close button */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Modal content text */
+        .modal-text {
+            text-align: center;
+        }
+
+        /* Style your modal content here */
+        #modal-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="news-block" style="background-image: url('https://nitextile.pt/wp-content/uploads/2023/09/Frame-80.png');">
+    <div class="news-block-content">
+        <p class="news-title">Noticia 1 - Título de Introdução</p>
+        <p class="news-description">Small text here</p>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Add your modal content here -->
+        <img src="" alt="Image" id="modal-image">
+        <div class="modal-text">
+            <p class="modal-title">Modal Title</p>
+            <p class="modal-description">Modal Description</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Get the modal element
+    var modal = document.getElementById('myModal');
+
+    // Get the news block element
+    var newsBlock = document.querySelector('.news-block');
+
+    // Get elements inside the modal
+    var modalImage = document.getElementById('modal-image');
+    var modalTitle = document.querySelector('.modal-title');
+    var modalDescription = document.querySelector('.modal-description');
+
+    // When the news block is clicked, display the modal
+    newsBlock.addEventListener('click', function() {
+        // Set the modal content
+        modalImage.src = 'https://nitextile.pt/wp-content/uploads/2023/09/Frame-80.png';
+        modalTitle.textContent = 'Noticia 1 - Título de Introdução';
+        modalDescription.textContent = 'Small text here';
+
+        // Show the modal
+        modal.style.display = 'block';
+    });
+
+    // When the close button is clicked, hide the modal
+    var closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Close the modal when clicking outside the modal content
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+footer {
+  height: 660px;
+}
+}
+
+
+footer {
+    background-color: #157E80;
+    height: 460px;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+.footer-content {
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-row svg {
+    margin: 0 10px;
+    width: 65px;
+    height: 65px;
+}
+
+
+.FooterTitle {
+
+margin-top: 125px;
+font-weight: 700;
+font-size: 20px;
+
+
+}
+
+.FooterSubitle {
+
+font-weight: 300;
+font-size: 16px;
+
+
+}

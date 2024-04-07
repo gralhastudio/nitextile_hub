@@ -1,0 +1,556 @@
+
+/* Mobile Styles */
+
+
+    @media (max-width: 912px) {
+        .sticky-nav {
+            height: 120px;
+            background-color: #177F81;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            position: absolute;
+            top: 90px; /* Changed from 90px */
+            right: 0;
+            display: none;
+            padding: 0;
+            background-color: #187f81;
+            line-height: 52px;
+            width: 100%; /* Added */
+            animation: SlideTopOut 1s ease-in-out forwards; /* Added */
+            z-index: 1;
+        }
+
+        .nav-links:not(.active) {
+    display: flex;
+    animation-name: SlideTopOut;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    top: -10px;
+    background-color: #187f81;
+}
+
+        .nav-links.active {
+            animation: SlideTop 1s ease-in-out forwards; /* Added */
+        }
+
+        .nav-links.active.animate {
+            animation: SlideTop 1s ease-in-out forwards; /* Added */
+        }
+
+        .nav-links li {
+            margin: 0; /* Removed margin-right and margin-left */
+        }
+
+        .nav-links a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #B9EAE7;
+            font-size: 4vw;
+    line-height: 13vw;
+        }
+
+        .logo {
+            margin-left: 0;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+
+        .svg-container {
+        display: none;
+
+        }
+    }
+
+    .containerserviços {
+      flex-direction: row;
+    }
+
+    .blockserviços {
+      flex: 1;
+      max-width: calc(33.33% - 40px);
+    }
+  }
+
+  .container_tipos_servicos {
+      display: inline-table;
+    }
+
+
+
+@media (max-width: 912px) {
+
+  /* Add your mobile-specific styles here */
+  .team-section {
+      max-width: 912px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+  }
+
+  .reconhece_block {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .team-container {
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+          margin-top: 25px;
+  }
+
+  .team-slide {
+      flex: 0 0 100%;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .team-slide img {
+      max-width: 60%;
+  }
+
+  button.prev-btn, button.next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+
+  button.prev-btn {
+      left: 10px;
+  }
+
+  button.next-btn {
+      right: 10px;
+  }
+
+
+  .container_tipos_servicos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 26px;
+}
+
+.square1 {
+
+      width: calc(95% - 20px);
+}
+
+.square2 {
+
+      width: calc(95% - 20px);
+}
+
+.square3 {
+
+      width: calc(95% - 20px);
+}
+
+.square4 {
+
+      width: calc(95% - 20px);
+}
+
+    .carousel {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .carousel-item {
+      flex: 1;
+      width: 100%;
+      margin: 0;
+    }
+
+    .arrows {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      display: none;
+    }
+
+
+
+  .carousel {
+background: #B9EAE7;
+}
+
+.carousel-cell {
+width: 100%;
+height: 500px;
+margin-right: 10px;
+background: #B9EAE7;
+border-radius: 5px;
+counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+display: block;
+text-align: center;
+content: counter(gallery-cell);
+line-height: 200px;
+font-size: 20px;
+color: #B9EAE7;
+}
+
+.text_cell {
+    text-align: center;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.text_name {
+text-align: center;
+font-size: 20px;
+font-weight: 700;
+margin: 30px;
+}
+
+.text_job {
+text-align: center;
+font-size: 12px;
+font-weight: 300;
+margin: 30px;
+}
+
+.block {
+
+align-items: center;
+flex-direction: row;
+
+}
+
+.container2 {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-left: 55px;
+      margin-right: 55px;
+          margin-top: -40px;
+    }
+
+    .block {
+      flex: 1;
+      margin: 10px;
+      text-align: center;
+      padding: 10px;
+
+    }
+  }
+
+    .subtitle {
+      margin-top: 10px;
+      /*margin-left: 60px;
+margin-right: 60px; */
+    }
+
+    @media (max-width: 768px) {
+
+.body {
+
+  width: 768px !important;
+  overflow: auto;
+
+}
+
+.space_partners_desktop {
+
+  display: none;
+}
+
+.space_partners_mobile {
+
+  display: flex;
+top: -40px;
+position: relative;
+}
+
+.Reconhecimentostitle {
+
+margin-top: 22%;
+
+}
+
+.modal-content {
+
+  width: 90%;
+}
+
+#section6 {
+    scroll-margin-top: 150px;
+    height: 650px;
+}
+
+#document  {
+
+width: 768px !important;
+}
+
+.square1 {
+
+      width: calc(105% - 20px);
+      border-radius: 20px;
+          height: 22vw;
+}
+
+.square2 {
+
+      width: calc(105% - 20px);
+        border-radius: 20px;
+            height: 22vw;
+}
+
+.square3 {
+
+      width: calc(105% - 20px);
+        border-radius: 20px;
+            height: 22vw;
+}
+
+.square4 {
+
+      width: calc(105% - 20px);
+        border-radius: 20px;
+            height: 22vw;
+                background-image: none;
+}
+
+      .block {
+        flex: 1 1 100%;
+      }
+
+      .contentQuemSomos {
+      flex: 1;
+      padding: 0px;
+      margin-left: 30px;
+      max-width: 30%;
+      box-sizing: border-box;
+      }
+
+      .ContainerServicos {
+
+      justify-content: space-between;
+      align-items: center;
+    padding-left: 10%;
+        padding-top: 50px;
+      }
+
+      .containerQuemSomos {
+
+        background-size: 55vw;
+        background-repeat: no-repeat;
+        background-position-x: -2%;
+        background-position-y: 3%;
+
+      }
+
+      .ContentServicos {
+
+      max-width: 100%;
+box-sizing: border-box;
+margin-left: 0px;
+
+      }
+
+      .text {
+
+            margin-top: 20px;
+      }
+
+      .title {
+
+        margin-bottom: 0px;
+      }
+
+      .title-left {
+
+            color: #157E80;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 40px;
+            margin-right: 0px;
+            /* margin-right: 160px; */
+        }
+
+        #section0 {
+    scroll-margin-top: 120px;
+        height: 115vw;
+}
+ #section1 {
+
+   scroll-margin-top: 120px;
+ }
+
+ .checkuptitle {
+
+   color: #0b4b4d;
+   font-size: 33px;
+   font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     margin-bottom: 0px;
+     margin-top: 41px;
+     margin-left: 8vw;
+     text-align: left;
+ }
+
+.Teamtitle {
+
+  margin-left: 8vw;
+      margin-right: 20vw;
+      margin-bottom: 0px;
+
+}
+
+.text_equipa {
+
+  font-size: 19px;
+    margin-bottom: 120px;
+    margin-top: 12px;
+    margin-left: 8vw;
+    text-align: left;
+}
+
+
+
+.banner-container {
+
+height: 480px;
+
+}
+.banner-video {
+
+  height: 440px;
+}
+
+.svg_container_arrow {
+
+  top: -217vw;
+    /* left: 48%; */
+    /* left: 0; */
+    width: 15%;
+    margin-left: 42vw;
+    margin-right: 45vw;
+
+}
+
+.svg_container_video_overlay {
+    display: none;
+
+}
+
+.svg_container_video_overlay_mobile {
+
+  position: relative;
+  top: -125vw;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.svg_container_video_multiply {
+
+  top: -165vw;
+}
+
+.svg_container_video_screen {
+
+      top: -209vw;
+}
+
+
+#section7 {
+    scroll-margin-top: 170px;
+    height: 810px;
+}
+
+.container-news {
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex-wrap: wrap;
+height: 210%;
+
+}
+
+      }
+
+
+ @media (max-width: 912px) {
+
+    .containerserviços {
+      display: none;
+      flex-direction: column;
+      width: 225%;
+      /* margin: 0px !important; */
+      margin-left: 14%;
+      margin-right: 14%;
+      padding: 2%;
+      background-size: 42vw;
+background-repeat: no-repeat;
+background-position-y: -47%;
+background-position-y: 2%;
+
+}
+
+
+
+
+.svg-container {
+flex: 1;
+max-width: 70%;
+display: flex;
+}
+
+.svgcontainer_mobile {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.svgcontainer_mobile svg {
+  width: 76vw; /* Make the SVG width 100% of its container */
+  height: auto; /* Allow the height to adjust proportionally */
+  display: block; /* Remove any extra spacing below the SVG */
+}
+
+}
+
+ @media (min-width: 912px) {
+   .svg-container {
+   flex: 1;
+   max-width: 70%;
+   display: flex;
+   }
+}
+
+ }
