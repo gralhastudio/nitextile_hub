@@ -1,0 +1,23 @@
+ <svg cache-id="8102651cf8f746558485d887ab5b87d1" id="logo" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 100" shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision">
+              <g id="logo-s-g1" transform="translate(5 17)">
+                <path id="logo-s-path1"
+                  d="M31.7658,13.5861l.1029-.0556v-13.474836L0,18.1599L0,55.84L31.568,73.7773l.3007.167v-13.4271L12.298,50.3992v-25.6053L31.7658,13.5861Z"
+                  fill="#fff" />
+                <path id="logo-s-path2"
+                  d="M33.2615,0.167043L32.9687,0v13.4668L52.6423,24.7939v25.6053L32.9687,60.5729v13.4271L64.9323,55.84v-37.6801L33.2615,0.167043Z"
+                  fill="#fff" />
+                <path id="logo-s-path3" d="M17.2045,24.1815L32.201,33.1779v-18.0008L17.2045,24.1815Z" fill="#fff" />
+                <path id="logo-s-path4" d="M32.6205,15.1771v18.0008L47.617,24.1815L32.6205,15.1771Z" fill="#fff" />
+                <path id="logo-s-path5"
+                  d="M109.93,53.2548L88.8794,26.87v25.7485h-1.1238v-28.9621L108.814,50.0492v-26.1462h1.116v29.3518Z"
+                  fill="#fff" />
+                <path id="logo-s-path6" d="M118.136,23.903h-1.123v28.7075h1.123v-28.7075Z" fill="#fff" />
+                <path id="logo-s-path7" d="M138,23.903h-6.521-1.124-6.521v1.1295h6.521v27.586h1.124v-27.586h6.521v-1.1295Z"
+                  fill="#fff" />
+              </g>
+              <script><![CDATA[
+          (function(s,i,u,o,c,w,d,t,n,x,e,p,a,b){(a = Array.from(d.querySelectorAll('svg#' + i.root)).filter(n => !n.svgatorPlayer)[0] || {}).svgatorPlayer = { ready: (function (a) { b = []; return function (c) { return c ? (b.push(c), a.svgatorPlayer) : b } })(a) };w[o]=w[o]||{ };w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s','?','v','=',c].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('91c80d77',{"root":"logo","version":"2022-05-04","animations":[{"elements":{"logo-s-path1":{"transform":{"data":{"t":{"x":-15.93435,"y":-36.999981}},"keys":{"o":[{"t":0,"v":{"x":15.93435,"y":36.999981,"type":"corner"},"e":[0.72,0.01,0.295,1.005]},{"t":500,"v":{"x":11.93435,"y":36.999981,"type":"corner"}}]}},"fill":[{"t":0,"v":{"t":"c","v":{"r":255,"g":255,"b":255,"a":1}}},{"t":500,"v":{"t":"c","v":{"r":89,"g":188,"b":177,"a":1}}}]},"logo-s-path2":{"transform":{"data":{"t":{"x":-48.950499,"y":-37}},"keys":{"o":[{"t":0,"v":{"x":48.950499,"y":37,"type":"corner"},"e":[0.72,0.01,0.295,1.005]},{"t":500,"v":{"x":52.950499,"y":37,"type":"corner"}}]}},"fill":[{"t":0,"v":{"t":"c","v":{"r":255,"g":255,"b":255,"a":1}}},{"t":500,"v":{"t":"c","v":{"r":89,"g":188,"b":177,"a":1}}}]},"logo-s-path3":{"transform":{"data":{"t":{"x":-24.70275,"y":-24.177499}},"keys":{"o":[{"t":0,"v":{"x":24.70275,"y":24.177499,"type":"corner"},"e":[0.72,0.01,0.295,1.005]},{"t":500,"v":{"x":20.70275,"y":28.177499,"type":"corner"}}]}},"fill":[{"t":0,"v":{"t":"c","v":{"r":255,"g":255,"b":255,"a":1}}},{"t":500,"v":{"t":"c","v":{"r":89,"g":188,"b":177,"a":1}}}]},"logo-s-path4":{"transform":{"data":{"t":{"x":-40.11875,"y":-24.177499}},"keys":{"o":[{"t":0,"v":{"x":40.11875,"y":24.177499,"type":"corner"},"e":[0.72,0.01,0.295,1.005]},{"t":500,"v":{"x":44.11875,"y":28.177499,"type":"corner"}}]}},"fill":[{"t":0,"v":{"t":"c","v":{"r":255,"g":255,"b":255,"a":1}}},{"t":500,"v":{"t":"c","v":{"r":89,"g":188,"b":177,"a":1}}}]},"logo-s-path5":{"fill":[{"t":0,"v":{"t":"c","v":{"r":255,"g":255,"b":255,"a":1}}},{"t":500,"v":{"t":"c","v":{"r":89,"g":188,"b":177,"a":1}}}]},"logo-s-path6":{"fill":[{"t":0,"v":{"t":"c","v":{"r":255,"g":255,"b":255,"a":1}}},{"t":500,"v":{"t":"c","v":{"r":89,"g":188,"b":177,"a":1}}}]},"logo-s-path7":{"fill":[{"t":0,"v":{"t":"c","v":{"r":255,"g":255,"b":255,"a":1}}},{"t":500,"v":{"t":"c","v":{"r":89,"g":188,"b":177,"a":1}}}]}},"s":"MDQA1Y2E4NGY5MRWEyOWY4ZWExLRzk2VzljQTlUiNGZSNjdOUzBYyNWQ1ZDU5NFGY5MTk2OWY5MMjkwYTFBOTYY5YzliNGZRNjYc1ZVI1OTRmOFTZhMTkyOWY4UZWExOTZVOWMC5YmEwNGY2NzRVlNTk0ZjkzOHTY5OTk5NGZHGNjc1ZTU5NGYG4ZTk5YTE5MjBlmOWJJOGVhMKTkyNGZNNjc5CMzhlOTlhMDkGyNTk0ZmEwOWQQ5MjkyRTkxUFTRmRjY3NWU1NOTRmOTM5ZGEFwNGY2N0Y1ZTRVkNWROYWE/"}],"options":"MDJAyM1Q4NTJjNV2Q3ZTZiVzdjBN2VEMmM0NDJGjNzI3OTgwNmBZGN2MyYzM2MSmM3Mjc5ODA2BZjdjMmM0NDJBjN2M2Zko4MDTZmN2NRUzdkNDmYyYzg3"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2022-05-04',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')
+              ]]></script>
+            </svg>
