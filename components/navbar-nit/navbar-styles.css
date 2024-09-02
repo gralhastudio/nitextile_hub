@@ -1,7 +1,7 @@
 .sticky-nav {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 80;
   background-color: #177f81;
   height: 6.85rem;
   width: 100%;
@@ -14,9 +14,21 @@
   width: 35%;
   min-width: 7rem;
   margin-left: 30px;
+  z-index: 92;
 }
 .sticky-nav .checkbox {
   display: none;
+}
+@media (max-width: 1080px) {
+  .sticky-nav .checkbox {
+    display: flex;
+    opacity: 0;
+    width: 35px;
+    height: 31px;
+    margin: -3px;
+    transform: translateX(30px);
+    z-index: 102;
+  }
 }
 .sticky-nav .mobile-menu {
   display: none;
@@ -42,12 +54,11 @@
     border-radius: 10px;
     background: #ffffff;
   }
-  .sticky-nav .mobile-menu .hamburger-lines .line .line1 {
-    transform-origin: 0% 0%;
+  .sticky-nav .mobile-menu .hamburger-lines .line1 {
     transition: transform 0.4s ease-in-out;
   }
-  .sticky-nav .mobile-menu .hamburger-lines .line .line1.active {
-    transform: rotate(45deg);
+  .sticky-nav .mobile-menu .hamburger-lines .line1.active {
+    transform: rotate(45deg) translateX(0px) translateY(10px);
   }
   .sticky-nav .mobile-menu .hamburger-lines .line2 {
     transition: transform 0.2s ease-in-out;
@@ -56,11 +67,36 @@
     transform: scaleY(0);
   }
   .sticky-nav .mobile-menu .hamburger-lines .line3 {
-    transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
   .sticky-nav .mobile-menu .hamburger-lines .line3.active {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateY(-16px) translateX(5px);
+  }
+}
+
+.mobile-menu-container {
+  position: relative;
+  display: flex;
+}
+.mobile-menu-container .nav-links {
+  display: none;
+}
+@media (max-width: 1080px) {
+  .mobile-menu-container .nav-links {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 90dvh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #177f81;
+    position: relative;
+    transform: translateX(-68.5rem);
+    transition: transform 0.7s ease-in-out;
+    z-index: 50;
+  }
+  .mobile-menu-container .nav-links.active {
+    transform: translateX(0rem);
   }
 }
 
