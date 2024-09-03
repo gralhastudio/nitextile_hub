@@ -1,0 +1,56 @@
+@import "variables.scss";
+@import "navbar-styles.scss";
+
+
+section {
+
+width: 100%;
+
+}
+
+
+.banner-container {
+
+    margin-top: $top-scaffold-navbar;
+    width: 100%;
+    transition: 0.8s ease-in-out;
+
+    @media(max-width:1080px) {
+
+        margin-top: calc($top-scaffold-navbar - 20px);
+      }
+
+    .banner-video {
+        position: absolute;
+        top:  calc($top-scaffold-navbar - 20px);
+        width: 100%;
+
+video {
+
+    width: 100%;
+
+}
+
+    }
+
+    .svg-video-overlay {
+
+        position: relative;
+        
+    }
+
+
+   
+}
+
+.down-arrow {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    svg {
+
+        width: 5%;
+    }
+}

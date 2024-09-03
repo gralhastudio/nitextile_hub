@@ -27,117 +27,6 @@
 font-weight: 700 !important;
 }
 
-    /* Header Styles */
-.header {
-      position: sticky;
-      display: flex;
-      justify-content: space-between;
-      height:115px;
-      background-color: #177F81;
-
-}
-
-    .sticky-nav {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background-color: #177F81;
-        height: 115px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        z-index: 4;
-    }
-
-.logo {
-
-  width: 135px;
-  height: 95px;
-  vertical-align: middle;
-  align-content: center;
-  align-items: center;
-  position: sticky;
-  margin-left: 15px;
-
-}
-
-
-    .logo img {
-        max-height: 65%;
-        max-width: 65%;
-        margin-left: 10px;
-        z-index: 101;
-    }
-
-    #logo2  {
-
-      position: relative;
-      z-index: 101;
-    }
-
-    /* Navigation Styles */
-    .nav-links {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: flex-end;
-        width: 100%;
-        text-align: center;
-        position: relative; /* Added */
-        transition: transform 0.3s ease-in-out; /* Added transition */
-    }
-
-    .nav-links li {
-        margin-right: 45px;
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: white;
-        transition: color 0.3s;
-    }
-
-    .nav-links a:hover {
-        color: #B9EAE7;
-    }
-
-    /* Menu Icon Styles */
-
-
-    .menu-icon {
-        display: none;
-        font-size: 45px;
-        color: white;
-        cursor: pointer;
-        margin-right: 3%;
-        margin-bottom: 2%;
-    }
-
-    /* Animation Styles */
-
-
-    @keyframes SlideTop {
-        from {
-            transform: translateY(-100%);
-        }
-        to {
-            transform: translateY(0%);
-        }
-    }
-
-    @keyframes SlideTopOut {
-        from {
-            transform: translateY(0%);
-        }
-        to {
-            transform: translateY(-100%);
-        }
-    }
 
     /* Banner Video */
 
@@ -234,7 +123,7 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 padding-left: 90px;
-padding-right: : 90px;
+padding-right: 90px;
 padding-top: 90px;
 background-image: url(https://nitextile.pt/wp-content/uploads/2023/08/Pattern.png);
 background-size: 32vw;
@@ -341,7 +230,7 @@ flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 padding-left: 90px;
-padding-right: : 90px;
+padding-right: 90px;
 padding-top: 110px;
 
 }
@@ -581,10 +470,10 @@ text-align: center;
 padding: 20px;
 }
 
-.arrows [
+.arrows {
 display:none;
 
-]
+}
 
 .ellipse {
 width: 130px;
@@ -918,7 +807,7 @@ flex-direction: row;
   height: 0px;
   }
 
-    }
+    
 
     .block {
       flex: 1;

@@ -154,4 +154,39 @@
     margin-right: 8%;
     margin-bottom: 2%;
   }
-}/*# sourceMappingURL=navbar-styles.css.map */
+}
+
+section {
+  width: 100%;
+}
+
+.banner-container {
+  margin-top: 6.85rem;
+  width: 100%;
+  transition: 0.8s ease-in-out;
+}
+@media (max-width: 1080px) {
+  .banner-container {
+    margin-top: calc(6.85rem - 20px);
+  }
+}
+.banner-container .banner-video {
+  position: absolute;
+  top: calc(6.85rem - 20px);
+  width: 100%;
+}
+.banner-container .banner-video video {
+  width: 100%;
+}
+.banner-container .svg-video-overlay {
+  position: relative;
+}
+
+.down-arrow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.down-arrow svg {
+  width: 5%;
+}/*# sourceMappingURL=global-nit.css.map */
