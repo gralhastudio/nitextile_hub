@@ -2,6 +2,21 @@
 @import "navbar-styles.scss";
 
 
+:root {
+
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+
+}
+
+h1 {
+
+    font-size: $header-1-font-size;
+    font-weight: $font-bold;
+
+}
+
+
 section {
 
 width: 100%;
@@ -21,6 +36,7 @@ width: 100%;
       }
 
     .banner-video {
+
         position: absolute;
         top:  calc($top-scaffold-navbar - 20px);
         width: 100%;
@@ -44,13 +60,41 @@ video {
 }
 
 .down-arrow {
-
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     width: 100%;
+   /* bottom: 30px; */
 
     svg {
 
         width: 5%;
     }
+}
+
+
+#section1 {
+
+.container {
+
+    display: flex;
+    width: 100%;
+
+    .text-container {
+
+        width: 40%;
+        
+    }
+
+    .svg-container {
+
+        width: 60%;
+
+        svg {
+
+            width: 100%;
+        }
+    }
+}
+
 }
